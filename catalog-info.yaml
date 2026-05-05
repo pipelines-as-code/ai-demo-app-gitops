@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: ai-demo-app-gitops
+  description: This is GitOps manifest for ai-demo-app
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain
+      icon: dashboard
+      type: admin-dashboard
+  annotations:
+    argocd/app-selector: tssc/gitops=ai-demo-app
+    backstage.io/kubernetes-id: ai-demo-app
+    backstage.io/techdocs-ref: dir:.
+    janus-idp.io/tekton: ai-demo-app
+spec:
+  type: gitops
+  owner: user:default/user1
+  lifecycle: experimental
+  dependsOn:
+    - component:ai-demo-app
