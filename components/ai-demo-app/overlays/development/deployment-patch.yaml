@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay-892bb-1.apps.cluster-892bb.dynamic.redhatworkshops.io/tssc/ai-demo-app:26bc7f51281ebb24c27f8a2b99e44b883f792425@sha256:01651cb86f620a784564ad49addbc6706f661b33fa916d27b4e22f91cf543c9b
+        - image: quay-892bb-1.apps.cluster-892bb.dynamic.redhatworkshops.io/tssc/ai-demo-app:620d4cfa72a62b735cffa6c899d71d855c15a3d6@sha256:b1bd3fe7540769c8a8d429c89a115258867bf7a6e4745e5ddeada13cf654ca85
           name: container-image
