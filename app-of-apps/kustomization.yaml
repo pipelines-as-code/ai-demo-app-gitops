@@ -8,5 +8,4 @@ commonLabels:
   app.kubernetes.io/part-of: ai-demo-app
 resources:
   - application-dev.yaml
-  - application-stage.yaml
-  - application-prod.yaml
+

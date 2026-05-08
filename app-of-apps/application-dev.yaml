@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ai-demo-app-development
+  name: ai-demo-app-rollout-dev
   namespace: tssc-gitops
   finalizers: ["resources-finalizer.argocd.argoproj.io"]
 spec:
@@ -9,9 +9,9 @@ spec:
   source:
     path: ./components/ai-demo-app/overlays/development
     repoURL: https://github.com/pipelines-as-code/ai-demo-app-gitops
-    targetRevision: main
+    targetRevision: rollout
   destination:
-    namespace: tssc-app-development
+    namespace: ai-demo-app-rollout-dev
     server: https://kubernetes.default.svc
   syncPolicy:
     managedNamespaceMetadata:

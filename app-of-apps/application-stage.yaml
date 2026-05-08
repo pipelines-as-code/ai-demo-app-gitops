@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: ai-demo-app-stage
+  name: ai-demo-app-rollout-stage
   namespace: tssc-gitops
   finalizers: ["resources-finalizer.argocd.argoproj.io"]
 spec:
