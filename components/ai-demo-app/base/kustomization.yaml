@@ -7,6 +7,6 @@ commonLabels:
   backstage.io/kubernetes-namespace: tssc-app
   app.kubernetes.io/part-of: ai-demo-app
 resources:
-  - deployment.yaml
+  - rollout.yaml
   - route.yaml
   - service.yaml
