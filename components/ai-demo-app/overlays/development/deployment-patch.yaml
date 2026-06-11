@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay-l7hfb-1.apps.cluster-l7hfb.dynamic2.redhatworkshops.io/tssc/ai-demo-app:6322d559ceeede9539b9cc7c8c8e8524668ddd9d@sha256:fb5c69c0a6ca051dbc6c3085fc3df9f4bcf3511771b4181c45e115b426f57d00
+        - image: quay-l7hfb-1.apps.cluster-l7hfb.dynamic2.redhatworkshops.io/tssc/ai-demo-app:b280864b5ae0a49709fb7046b933fc5f8d982d34@sha256:ed2ad6ab1a2405e0753570f2b82e32f62591140186ceeb57cd705b252420882b
           name: container-image
