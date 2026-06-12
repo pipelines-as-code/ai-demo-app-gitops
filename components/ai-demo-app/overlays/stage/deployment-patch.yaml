@@ -1,16 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
-metadata:   
-  annotations:  
+metadata:
+  annotations:
     tad.gitops.set/image: ".spec.template.spec.containers[0].image"
     tad.gitops.get/image: ".spec.template.spec.containers[0].image"
     tad.gitops.set/replicas: ".spec.replicas"
-    tad.gitops.get/replicas: ".spec.replicas" 
+    tad.gitops.get/replicas: ".spec.replicas"
+    app.openshift.io/vcs-uri: 'https://github.com/pipelines-as-code/ai-demo-app.git'
+    app.openshift.io/vcs-ref: 'main'
   name: ai-demo-app
 spec:
   replicas: 1
   template:
     spec:
       containers:
-      - image: quay-892bb-1.apps.cluster-892bb.dynamic.redhatworkshops.io/tssc/ai-demo-app:latest
-        name: container-image  
+        - image: quay-l7hfb-1.apps.cluster-l7hfb.dynamic2.redhatworkshops.io/tssc/ai-demo-app:e876d4e73fb72bdc020374b4609ec40ee5cf2c6a@sha256:9c2f69f5128c9190bcb956c32b2abefe26fcd89cce9925f8b69d7376196bff64
+          name: container-image
