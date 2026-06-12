@@ -2,7 +2,7 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: ai-demo-app-rollout-dev
-  namespace: tssc-gitops
+  namespace: openshift-gitops
   finalizers: ["resources-finalizer.argocd.argoproj.io"]
 spec:
   project: default
@@ -11,12 +11,12 @@ spec:
     repoURL: https://github.com/pipelines-as-code/ai-demo-app-gitops
     targetRevision: rollout
   destination:
-    namespace: tssc-app-development
+    namespace: ai-demo-app
     server: https://kubernetes.default.svc
   syncPolicy:
     managedNamespaceMetadata:
       labels:
-        argocd.argoproj.io/managed-by: tssc-gitops
+        argocd.argoproj.io/managed-by: openshift-gitops
     automated:
       prune: true
       selfHeal: true
