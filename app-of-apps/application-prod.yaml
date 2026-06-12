@@ -11,7 +11,7 @@ spec:
     repoURL: https://github.com/pipelines-as-code/ai-demo-app-gitops
     targetRevision: rollout
   destination:
-    namespace: ai-demo-app-rollout-prod
+    namespace: tssc-app-prod
     server: https://kubernetes.default.svc
   syncPolicy:
     managedNamespaceMetadata:
