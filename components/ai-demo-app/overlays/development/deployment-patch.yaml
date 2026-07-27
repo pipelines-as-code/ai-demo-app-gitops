@@ -12,5 +12,5 @@ spec:
   template:
     spec:
       containers:
-        - image: quay-smnvd-1.apps.cluster-smnvd.dyn.redhatworkshops.io/tssc/ai-demo-app:29fd936ad5d3b3dccd52c50e4d3604a391f135c9@sha256:6f40cd72b84d8fdaf0257f11d20ef1e869aa5b6c05ba3cd72ac75a14c91aa97d
+        - image: quay-smnvd-1.apps.cluster-smnvd.dyn.redhatworkshops.io/tssc/ai-demo-app:ef0b453da3c546f0cadad88faf763bf8aab5f196@sha256:39c738b3759adc516c27026c4d873f64e7705a8ae150984584d682430d3cfa22
           name: container-image
